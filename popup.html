@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<script src="jquery-3.1.1.min.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="popup.js"></script>
+
+<html>
+<body>
+
+<h1>A quick way to navigate to your course search</h1>
+
+<table  class="DropDown">
+  <tr><th>Semester</th></tr>
+  <tr><td><select class="semester"></select></td></tr>
+</table>
+<table  class="DropDown">
+  <tr><th>Subject Area</th></tr>
+  <tr><td><select class="subject-area"></select><img id="icon-subject" src="ajax-loader.gif"></td></tr>
+</table>
+<table class="DropDown">
+  <tr><th>Course Id</th></tr>
+  <tr><td><select class="course-id"></select><img id="icon-course" src="ajax-loader.gif"></td></tr>
+</table>
+
+<button type="button" class="Button" id="navigate">Take me there</button>
+<span><button type="button" class="Button" id="save">Save</button></span>
+
+<ul id="exist" class="History"></ul>
+
+<h4>Log in schedulecourses.com and import your courses</h4>
+<button type="button" class="Button" id="import">Import courses</button>
+
+
+
+<style>
+
+h1{
+	font-size: 18px;
+	width: 100%;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+table, th, td{
+  border-style: groove;
+	border: 1px solid grey;
+	border-collapse: collapse; 
+}
+th,td{
+	padding: 5px;
+}
+th{
+	background-color: #3CB371 ;
+}
+#icon {
+  display: none;
+}
+
+li {
+  font-size: 14px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+ul {
+  padding-left: 0;
+}
+
+body{
+  background-color: #32CD32;
+  min-width: 350px;
+}
+
+.RemoveButton {
+  float : right;
+}
+
+.SearchEntry {
+  font-size: 16px;
+  background: #3CB371;
+  border-top-color: rgb(197, 197, 197);
+  border-top-style: solid;
+  border-top-width: 1px;
+  height: 24px;
+  border-bottom-color: rgb(197, 197, 197);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+
+}
+
+.SearchEntry:hover {
+  background-color:#2E8B57;
+}
+
+.Button {
+  font-size: 16px;
+  background-color:#3CB371;
+  -moz-border-radius:14px;
+  -webkit-border-radius:14px;
+  border-radius:28px;
+  border:1px solid #18ab29;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+}
+.Button:hover {
+  background-color:#2E8B57;
+}
+.Button:active {
+  position:relative;
+  top:1px;
+}
+
+.DropDown {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.DropDown select {
+    padding: 5px 8px;
+    box-shadow: none;
+    background-image: none;
+}
+
+.RemoveButton:hover {
+  background-color:#8B4513;
+}
+
+.History {
+  border-radius: 10px;
+  overflow:auto; 
+  overflow-y:auto;
+  height:200px;
+  border-style: groove;
+}
+</style>
+
+
+</body>
+</html>
+
+

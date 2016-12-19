@@ -1,0 +1,34 @@
+img{
+	float: top;
+	
+}
+
+ h1{
+	font-weight: 900;
+	font-size: 18px;
+	width: 100%;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background-color: white;
+	min-width: 600px;
+}
+table, th, td{
+	
+	border: 1px solid grey;
+	border-collapse: collapse; 
+}
+th,td{
+	
+	padding: 5px;
+	text-align: left;
+
+}
+th{
+	background-color: #E5FFF6;
+
+}
+
